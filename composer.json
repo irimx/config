@@ -1,0 +1,12 @@
+{
+    "name": "irimx/config",
+    "type": "library",
+    "require": {
+      "php": ">=7.1.16"
+    },
+    "autoload": {
+      "psr-4": {
+        "irimx\\config\\": "src"
+      }
+    }
+  }
