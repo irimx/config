@@ -8,14 +8,12 @@ class ConfigurationWriter{
     private $filePath = '';
 
     public function __construct($filePath){
-        try {
-            if( !is_file($filePath) ){
-                throw new Exception("please create the following database config directory {$filePath} ");
-            }
-            $this->filePath = $filePath;
-        } catch (Exception $e) {
-            echo $e->getMessage();
+        if( !is_file($filePath) ){
+            throw new Exception("please create the following database config file {$filePath} ");
         }
+        else{
+            $this->filePath = $filePath;
+		}   
     }
 
     public function getLines() : array{
