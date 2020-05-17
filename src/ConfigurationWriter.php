@@ -13,7 +13,7 @@ class ConfigurationWriter{
         }
         else{
             $this->filePath = $filePath;
-		}   
+		}
     }
 
     public function getLines() : array{
